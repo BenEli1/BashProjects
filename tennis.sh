@@ -3,7 +3,6 @@
 #Ben Eli 319086435
 
 #starting points and line
-
 points1=50
 points2=50
 line=" |       |       O       |       | "
