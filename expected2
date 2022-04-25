@@ -1,0 +1,69 @@
+ Player 1: 50         Player 2: 50 
+ --------------------------------- 
+ |       |       #       |       | 
+ |       |       #       |       | 
+ |       |       O       |       | 
+ |       |       #       |       | 
+ |       |       #       |       | 
+ --------------------------------- 
+PLAYER 1 PICK A NUMBER: 
+PLAYER 2 PICK A NUMBER: 
+ Player 1: 40         Player 2: 40 
+ --------------------------------- 
+ |       |       #       |       | 
+ |       |       #       |       | 
+ |       |       O       |       | 
+ |       |       #       |       | 
+ |       |       #       |       | 
+ --------------------------------- 
+       Player 1 played: 10
+       Player 2 played: 10
+
+
+PLAYER 1 PICK A NUMBER: 
+NOT A VALID MOVE !
+PLAYER 1 PICK A NUMBER: 
+PLAYER 2 PICK A NUMBER: 
+ Player 1: 25         Player 2: 16 
+ --------------------------------- 
+ |       |       #       |       | 
+ |       |       #       |       | 
+ |       |   O   #       |       | 
+ |       |       #       |       | 
+ |       |       #       |       | 
+ --------------------------------- 
+       Player 1 played: 15
+       Player 2 played: 24
+
+
+PLAYER 1 PICK A NUMBER: 
+PLAYER 2 PICK A NUMBER: 
+ Player 1: 13         Player 2: 2 
+ --------------------------------- 
+ |       |       #       |       | 
+ |       |       #       |       | 
+ |   O   |       #       |       | 
+ |       |       #       |       | 
+ |       |       #       |       | 
+ --------------------------------- 
+       Player 1 played: 12
+       Player 2 played: 14
+
+
+PLAYER 1 PICK A NUMBER: 
+NOT A VALID MOVE !
+PLAYER 1 PICK A NUMBER: 
+PLAYER 2 PICK A NUMBER: 
+ Player 1: 10         Player 2: 0 
+ --------------------------------- 
+ |       |       #       |       | 
+ |       |       #       |       | 
+ |       |       #   O   |       | 
+ |       |       #       |       | 
+ |       |       #       |       | 
+ --------------------------------- 
+       Player 1 played: 3
+       Player 2 played: 2
+
+
+PLAYER 1 WINS !

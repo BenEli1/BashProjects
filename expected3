@@ -1,0 +1,93 @@
+ Player 1: 50         Player 2: 50 
+ --------------------------------- 
+ |       |       #       |       | 
+ |       |       #       |       | 
+ |       |       O       |       | 
+ |       |       #       |       | 
+ |       |       #       |       | 
+ --------------------------------- 
+PLAYER 1 PICK A NUMBER: 
+PLAYER 2 PICK A NUMBER: 
+ Player 1: 39         Player 2: 33 
+ --------------------------------- 
+ |       |       #       |       | 
+ |       |       #       |       | 
+ |       |   O   #       |       | 
+ |       |       #       |       | 
+ |       |       #       |       | 
+ --------------------------------- 
+       Player 1 played: 11
+       Player 2 played: 17
+
+
+PLAYER 1 PICK A NUMBER: 
+PLAYER 2 PICK A NUMBER: 
+ Player 1: 24         Player 2: 19 
+ --------------------------------- 
+ |       |       #       |       | 
+ |       |       #       |       | 
+ |       |       #   O   |       | 
+ |       |       #       |       | 
+ |       |       #       |       | 
+ --------------------------------- 
+       Player 1 played: 15
+       Player 2 played: 14
+
+
+PLAYER 1 PICK A NUMBER: 
+PLAYER 2 PICK A NUMBER: 
+ Player 1: 20         Player 2: 12 
+ --------------------------------- 
+ |       |       #       |       | 
+ |       |       #       |       | 
+ |       |   O   #       |       | 
+ |       |       #       |       | 
+ |       |       #       |       | 
+ --------------------------------- 
+       Player 1 played: 4
+       Player 2 played: 7
+
+
+PLAYER 1 PICK A NUMBER: 
+PLAYER 2 PICK A NUMBER: 
+ Player 1: 13         Player 2: 10 
+ --------------------------------- 
+ |       |       #       |       | 
+ |       |       #       |       | 
+ |       |       #   O   |       | 
+ |       |       #       |       | 
+ |       |       #       |       | 
+ --------------------------------- 
+       Player 1 played: 7
+       Player 2 played: 2
+
+
+PLAYER 1 PICK A NUMBER: 
+PLAYER 2 PICK A NUMBER: 
+ Player 1: 8         Player 2: 6 
+ --------------------------------- 
+ |       |       #       |       | 
+ |       |       #       |       | 
+ |       |       #       |   O   | 
+ |       |       #       |       | 
+ |       |       #       |       | 
+ --------------------------------- 
+       Player 1 played: 5
+       Player 2 played: 4
+
+
+PLAYER 1 PICK A NUMBER: 
+PLAYER 2 PICK A NUMBER: 
+ Player 1: 0         Player 2: 0 
+ --------------------------------- 
+ |       |       #       |       | 
+ |       |       #       |       | 
+ |       |       #       |       |O
+ |       |       #       |       | 
+ |       |       #       |       | 
+ --------------------------------- 
+       Player 1 played: 8
+       Player 2 played: 6
+
+
+PLAYER 1 WINS !
