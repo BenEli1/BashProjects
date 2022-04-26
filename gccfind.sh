@@ -1,11 +1,17 @@
 #!/bin/bash
 #Ben Eli 319086435
 var="-r"
+dir=$1
+if [[ ! "$0" == "./gccfind.sh" ]];then
+temp=$0
+dir=${temp%"gccfind.sh"}"$dir"
+fi
+
+
 if [ "$#" -lt "2" ]; then
     echo "Not enough parameters"
     exit 0
 fi
-dir=$1
 if [[ "$3" == "$var" ]];
 then
 for file in $(find "$dir" -name "*.out")
