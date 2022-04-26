@@ -9,7 +9,7 @@ int main()
 		printf("1\n"); else 	{
 		wait(&stat);
 		printf("2\n");
-		printf("hello world's");
+		printf("hello world's childs");
 	}
 }
 

@@ -16,7 +16,7 @@ done
 
 for file in $(find "$dir" -name "*.c")
 do
-if grep -q "$2" "$file"; then
+if grep -q -w -i "$2" "$file"; then
   string=${file%".c"};
 gcc -w $file -o $string.out
 fi
@@ -32,7 +32,7 @@ done
 
 for file in $(find "$dir" -maxdepth 1  -name "*.c")
 do
-if grep -q "$2" "$file"; then
+if grep -q -w -i "$2" "$file"; then
   string=${file%".c"};
 gcc -w $file -o $string.out
 fi
