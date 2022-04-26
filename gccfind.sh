@@ -5,15 +5,16 @@ if [ "$#" -lt "2" ]; then
     echo "Not enough parameters"
     exit 0
 fi
-
-
-for file in $(find . -name "*.out")
+dir=$1
+if [[ "$3" == "$var" ]];
+then
+for file in $(find "$dir" -name "*.out")
 do
 rm "$file"
 done
 
 
-for file in $(find . -name "*.c")
+for file in $(find "$dir" -name "*.c")
 do
 if grep -q "$2" "$file"; then
   string=${file%".c"};
@@ -21,12 +22,20 @@ gcc -w $file -o $string.out
 fi
 done
 
-if [[ "$3" == "$var" ]];
-then
-for f in $1; do
-    if [ -d "$f" ]; 
-    then
-    $($0 $f $2)
-    fi
-done
 fi
+
+for file in $(find "$dir" -maxdepth 1  -name "*.out")
+do
+rm "$file"
+done
+
+
+for file in $(find "$dir" -maxdepth 1  -name "*.c")
+do
+if grep -q "$2" "$file"; then
+  string=${file%".c"};
+gcc -w $file -o $string.out
+fi
+done
+
+
