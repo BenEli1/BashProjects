@@ -23,14 +23,9 @@ echo " --------------------------------- "
 }
 
 #letting the players pick numbers from 0 to their current points left, and checking if the input is indeed a number.
-player_pick(){
-read -p "PLAYER 1 PICK A NUMBER: " -s player_1_guess
-echo ""
-
-if [[  $player_1_guess =~ ^-?[0-9]+$ ]] && [ $player_1_guess -le $points1 ] && (("$player_1_guess">=0""))
-  then 
-    read -p "PLAYER 2 PICK A NUMBER: " -s player_2_guess
-    echo ""
+player2_pick(){
+  read -p "PLAYER 2 PICK A NUMBER: " -s player_2_guess
+  echo ""
   if [[  $player_2_guess =~ ^-?[0-9]+$ ]] && [ $player_2_guess -le $points2 ] && (("$player_2_guess">=0""))
   then
     points1=$((points1 - player_1_guess))
@@ -104,16 +99,30 @@ line=" |       |       #   O   |       | "
     ;;
 esac
 fi
-  else  
+else  
   echo "NOT A VALID MOVE !"
-  player_pick
-  fi
-  else
-  echo "NOT A VALID MOVE !"
-  player_pick
-
+  player2_pick
 fi
 }
+
+player1_pick(){
+read -p "PLAYER 1 PICK A NUMBER: " -s player_1_guess
+echo ""
+
+if [[  $player_1_guess =~ ^-?[0-9]+$ ]] && [ $player_1_guess -le $points1 ] && (("$player_1_guess">=0""))
+  then 
+  player2_pick
+  else  
+  echo "NOT A VALID MOVE !"
+  player1_pick
+  fi
+}
+
+
+
+
+
+
 #printing the players picks
 show_picks(){
 echo -e "       Player 1 played: $player_1_guess\n       Player 2 played: $player_2_guess\n\n"
@@ -171,7 +180,7 @@ fi
 print_board
 while $game_on
 do
-  player_pick
+  player1_pick
   print_board
   show_picks
   checkWinner
