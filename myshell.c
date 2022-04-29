@@ -11,7 +11,6 @@ int main(int argc, char *argv[])
     int stat, waited, ret_code;
     pid_t pid;
     char *pwd = getenv("PATH");
-    char *pwd2 = getenv("PWD");
     for (int i = 0; i < argc; i++)
     {
         strcat(pwd, ":");
