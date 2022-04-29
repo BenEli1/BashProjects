@@ -2,10 +2,11 @@
 #Ben Eli 319086435
 var="-r"
 dir=$1
-if [[ ! "$0" == "./gccfind.sh" ]]; then
-  temp=$0
-  dir=${temp%"gccfind.sh"}"$dir"
-fi
+#if [[ ! "$0" == "./gccfind.sh" ]]; 
+#then
+  #temp=$0
+  #dir=${temp%"gccfind.sh"}"$dir"
+#fi
 
 if [ "$#" -lt "2" ]; then
   echo "Not enough parameters"
