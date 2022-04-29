@@ -21,8 +21,8 @@ int main(int argc, char* argv[])
     char* arr[1000]={};
     int i=0;
      setenv("PATH",pwd,0);
-    i=0;
     while(1) {
+        i=0;
         printf(" $ ");
         fflush(stdout);
         scanf("%[^\n]%*c", command);
@@ -35,6 +35,16 @@ int main(int argc, char* argv[])
         if (strcmp(arr[0], "exit") == 0) {
             exit(0);
         }
+        else if (strcmp(arr[0], "cd") == 0) {
+            ret_code = execvp("cd", arr);
+            if (ret_code == -1) {
+                perror(strcat(arr[0]," failed"));
+            } 
+        }
+        else if (strcmp(arr[0], "history") == 0) {
+
+        }
+        else{
         pid = fork();
         if (pid == 0) {  /* Child */
             ret_code = execvp(arr[0], arr);
@@ -44,9 +54,8 @@ int main(int argc, char* argv[])
             } else
                 printf("Banana");
         } else {  /* Parent */
-            printf("Father: after fork, son proc id is %d \n", pid);
             waited = wait(&stat);   /* stat can tell what happened */
-            printf("Father: Son proc completed,  id is %d \n", waited);
+        }
         }
     }
 

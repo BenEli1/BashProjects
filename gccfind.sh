@@ -42,6 +42,7 @@ if grep -q -w -i "$2" "$file"; then
   string=${file%".c"};
 gcc -w $file -o $string.out
 fi
+
 done
 
 
