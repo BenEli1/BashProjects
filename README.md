@@ -10,6 +10,8 @@ that have the given word (arg 2) in the file using gcc(.c ending)
 if the third argument is passed so the program iterates recusrivly through the directory path.
 
 example - 
+
+
 ![image](https://user-images.githubusercontent.com/92650578/165935229-11b86ee8-9892-4d8b-ae61-811639b6e187.png)
 
 tennis.sh - paper game 
