@@ -28,6 +28,8 @@ if one of the players doesn't have any more points remaining and the other does 
 if both lost all points so the position of the ball decides the winner.
 
 example - 
+
+
 ![image](https://user-images.githubusercontent.com/92650578/165935146-20babbb0-a3ef-47ad-a43b-5810c2018b19.png)
 
 
