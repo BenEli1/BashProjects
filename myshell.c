@@ -27,7 +27,7 @@ int main(int argc, char *argv[])
     while (1)
     {
         i = 0;
-        printf(" $ ");
+        printf("$ ");
         fflush(stdout);
         scanf("%[^\n]%*c", command);
         strcpy(historyArr[j], command);
