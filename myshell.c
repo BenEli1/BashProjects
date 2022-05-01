@@ -11,10 +11,10 @@ int main(int argc, char *argv[])
     int stat, waited, ret_code;
     pid_t pid;
     char *pwd = getenv("PATH");
-    for (int i = 0; i < argc; i++)
+    for(int p = 0; p < argc; p++)
     {
         strcat(pwd, ":");
-        strcat(pwd, argv[i]);
+        strcat(pwd, argv[p]);
     }
 
     char command[100] = {};
@@ -58,7 +58,7 @@ int main(int argc, char *argv[])
         {
             pidArr[j] = getpid();
             j++;
-            for (int k = 0; k < j; k++)
+            for(int k = 0; k < j; k++)
             {
                 printf("%d %s\n", pidArr[k], historyArr[k]);
             }
