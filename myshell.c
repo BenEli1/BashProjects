@@ -11,7 +11,8 @@ int main(int argc, char *argv[])
     int stat, waited, ret_code;
     pid_t pid;
     char *pwd = getenv("PATH");
-    for(int p = 0; p < argc; p++)
+    int p=0;
+    for(; p < argc; p++)
     {
         strcat(pwd, ":");
         strcat(pwd, argv[p]);
@@ -23,6 +24,7 @@ int main(int argc, char *argv[])
     pid_t pidArr[10000] = {};
     int i = 0;
     int j = 0;
+    int k = 0;
     setenv("PATH", pwd, 0);
     while (1)
     {
@@ -58,7 +60,7 @@ int main(int argc, char *argv[])
         {
             pidArr[j] = getpid();
             j++;
-            for(int k = 0; k < j; k++)
+            for(k = 0; k < j; k++)
             {
                 printf("%d %s\n", pidArr[k], historyArr[k]);
             }
