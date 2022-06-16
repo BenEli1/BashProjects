@@ -1,5 +1,4 @@
 #!/bin/bash
-#Ben Eli 319086435
 var="-r"
 dir=$1
 #if [[ ! "$0" == "./gccfind.sh" ]]; 
